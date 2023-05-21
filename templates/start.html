@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOG BREED CLASSIFIER</title>
+<style>
+html, body{
+height: 100%;
+background-color: #FAE5DF;
+font-family: "Times New Roman", Times, serif;
+}
+.content {
+min-height: 95%;
+max-width: 75%;
+margin: auto;
+background: white;
+padding: 10px;
+text-align: center;
+}
+h1 {
+color: black;
+text-align:center;
+font-weight: bold;
+}
+#img1 {
+max-width:70px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+#output {
+width:auto;
+height: 200px;
+}
+
+
+#in{
+height: 400px; max-width: 60%; margin: auto;
+background: #303179;
+padding: 10px;
+text-align: center;
+}
+
+input[type=submit]{
+     cursor: pointer; border: none; text-align: center; text-decoration: none; display: inline-block; font-size: 15px; padding: 2px 8px;
+}
+
+input[type="file"] {
+z-index: -1;
+top: 6px;
+left: 0px;
+font-size: 15px;
+color: white;
+font-weight: bold;
+font-family: "Times New Roman", Times, serif; text-align: center;
+}
+
+</style>
+
+<script>
+var loadFile = function(event) {
+var image = document.getElementById('output'); image.src=URL.createObjectURL(event.target.files[0]);};
+</script>
+
+</head>
+<body bgcolor="#EAE5DF">
+<div class="content">
+<br><br><br>
+
+ <h1>KNOW YOUR DOG<h1>
+<br>
+
+<div id="in">
+<form action="/" method="POST" enctype="multipart/form-data"> 
+<br>
+<input type="file" id="myFile" name="file" accept=".png, .jpg , .jpeg  " >
+<input type="submit" value="Submit"><br><br>
+<img id="output" name="myimg" />
+</form>
+</div>
+</div>
+</body>
+</html> 
+

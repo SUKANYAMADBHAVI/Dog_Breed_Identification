@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOG BREED CLASSIFIER RESULT</title>
+<style>
+html, body{
+height: 100%;
+font-family: "Times New Roman", Times, serif;
+}
+iframe {
+border: 1px white solid;
+}
+.content {
+min-height: 95%; max-width: 75%; margin: auto; background: white;
+padding: 10px;
+text-align: center;
+}
+
+h1 {
+color:black; text-align:center;
+font-weight: bold;
+}
+h2 {
+color:white;
+text-align:center;
+font-weight: bold;
+font-size:25px;
+}
+
+
+#img1 {
+max-width: 70px; height: auto; margin-left: auto;
+margin-right: auto; display: block; font-size:10px;
+}
+#img2{ height:299px; width:auto;
+color: white; font-size: 15px;
+}
+
+#in{
+    height: 550px; max-width: 80%;
+    margin: auto;
+    background: #303179;
+    padding: 10px;
+    text-align: center;
+    }
+
+
+</style>
+
+</head>
+<body bgcolor="#FAE5DF">
+<div class="content">
+<br><br><br>
+
+<h1>YOUR DOG IS {{prediction}}<h1>
+<br>
+<div id="in">
+<h2>ABOUT YOUR DOG</h2>
+<div style="text-align:center;">
+<iframe src={{src}} width=95% height=450px></iframe>
+</div>
+</div>
+</div>
